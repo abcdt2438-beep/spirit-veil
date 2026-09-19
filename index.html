@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>VEIL · Spirit Channel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="veil">
+    <video id="cam" autoplay playsinline muted></video>
+    <canvas id="fx"></canvas>
+    <div class="mist"></div>
+    <div class="vignette"></div>
+    <div class="scan"></div>
+    <div class="orbs" id="orbs"></div>
+    <header class="top">
+      <div class="sigil">◯</div>
+      <div>
+        <div class="brand">VEIL CIRCLE</div>
+        <div class="sub" id="status">threshold closed</div>
+      </div>
+      <button id="camBtn" class="ghost">open eye</button>
+    </header>
+    <div class="presence">
+      <span>presence</span>
+      <div class="bar"><i id="pbar"></i></div>
+      <span id="pname">—</span>
+    </div>
+    <main class="chat" id="chat"></main>
+    <form id="form" class="dock">
+      <select id="spirit">
+        <option value="veil">The Veil</option>
+        <option value="threshold">Threshold Keeper</option>
+        <option value="ash">Ash Voice</option>
+        <option value="bone">Bone Echo</option>
+        <option value="rust">Rust Saint</option>
+      </select>
+      <input id="msg" type="text" autocomplete="off" placeholder="speak across the veil…" />
+      <button type="submit">send</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
